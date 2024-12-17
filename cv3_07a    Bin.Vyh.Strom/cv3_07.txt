@@ -1,0 +1,18 @@
+cv1-03
+
+Realizujte binární vyhledávací strom (BVS)
+
+Krom podprogramù, které jsme probrali v teorii, dodìlejte:
+- zruseni celeho BVS (rekursivnì) 
+- vyhledaní uzlu s hodnotou klíèe h (rekursivnì)
+  Bonus (co jedí vtipnou kaši):
+    - pøidání listu do BVS (bez rekurze)
+    - zobrazení hodnot klíèù po hladinách (každá hladina na 
+      jednom øádku)
+    - urèení maximální výšky BVS
+
+Forma zpracování: 
+   a) klasická modulová jednotka
+   b) modul jako tøída
+
+Napište jednoduchý program, ve kterém otestujte funkènost obou modulù 

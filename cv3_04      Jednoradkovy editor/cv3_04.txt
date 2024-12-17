@@ -1,0 +1,54 @@
+CV3_04 
+
+Tridu jednosmìrnì vázaného lineárního seznamu pouijte pøi implementaci jednoøádkového editoru.
+Editor realizujte pomocí funkce readStr, její specifikace je uvedena dále. 
+Dáno:
+
+Type Tstr40 = string[40];   - maximální délka vstupujícího øetìzce
+     Tstr15 = string[15];   - maximální délka popisky
+
+Hlavièka funkce:
+  function readStr(popis : Tstr15; x,y : byte) : Tstr40;
+   
+Vıznam parametrù:
+a) popis:  návodnı text(napø. Zadej jmeno: ) 
+b) x,y  :  souøadnice prvního znaku návodného textu (popis) 
+
+Poadovaná funkcionalita øádkového editoru (f-ce readStr):
+  - pouze reim vkládání znakù 
+  - povolené znaky v øetezci: 'A'..'Z'| 'a'..'z'| '0'..'9'| '+'|'-'| '.'| ','  
+  - mazání posledního znaku
+          (klávesa BACKSPACE kód 8)  
+  - mazání znaku na libovolné pozici vstupního pole znakù
+          (klávesa DELETE kód 0 83)
+          (klávesa ->  kód 0 77  klávesa <- kód 0 75)
+  - vloení znaku na libovolné pozici vstupního pole       
+  - konec vstupu 
+          (klávesa ENTER kód 13)
+
+
+Prostøedky unity CRT, které se mohou hodit:
+
+GotoXY(sloupec_x,radek_y: byte)	pøemístí kurzor na pozici [sloupec_x,radek_y]
+				[1,1]   - levı horní roh
+                                [80,25] - pravı dolní roh
+WhereX :byte			vrací sloupec_x aktuální pozice kurzoru
+WhereY :byte			vrací sloupec_y aktuální pozice kurzoru
+ClrEol				vymae znaky od pozice kurzoru do konce øádky,souøadnice kurzoru nemìní
+ReadKey : char			ète znak z bufferu klávesnice, neprovádí echo
+KeyPressed : boolean		testuje, zda v bufferu klávesnice je znak, pokud ano vrací TRUE, jinak FALSE 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+

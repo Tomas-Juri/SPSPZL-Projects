@@ -1,0 +1,68 @@
+CV4_02
+
+Navrhnìte program, který bude provádìt následující operace:
+ 	a) kódovat text v 7 bitovém ASCII do Morseovy abecedy
+ 	b) dekódovat z Morseovy abecedy
+
+Pro jednoduchost pøedpokládejte, že v textovém souboru, jehož obsah kódujeme, se nacházejí pouze 
+písmena ('A'..'Z', 'a'..'z'). 
+Za písmenem kódovaným v Morseovì abecedì udìlejte jedno lomítko, za slovem udìlejte lomítka dvì.
+Tedy zakódovaný text bude obsahovat znaky: teèku nebo èárku nebo lomítko
+=========================================================
+Pøíklad:
+Zadaní a)
+Obsah textového souboru, který kódujeme(vstupní soubor):
+SkolA Je
+
+Obsah zakódovaného souboru do Morseovy abecedy (výstupní soubor):
+.../-.-/---/.-../.-//.---/.//
+
+Zadání b)
+Obsah zakódovaného souboru v Morseovì abecedì (vstupní soubor):
+.../-.-/---/.-../.-//.---/.//
+
+Obsah textového souboru po dekódování(výstupní soubor):
+SKOLA JE
+==============================================================
+
+Program bude spouštìn z pøíkazového øádku pomocí parametrù. Parametry vhodnì zvolte.
+
+Forma zpracování: modulová jednotka
+
+Poznámka:
+
+1. Nejprve øešte kódování do Morseovy abecedy
+2. Pro dekódování Morseovy abecedy použijte BVS (pokud nevíte jak, poradím)
+
+Morseova abeceda
+a	.-		n	-.
+b	-...		o	---
+c	-.-.		p	.--.
+d	-..		q	--.-
+e	.		r	.-.
+f	..-.		s	...
+g	--.		t	-	
+h	....		u	..-
+ch	----		v	...-
+i	..		w	.--
+j	.---		x	-..-	
+k	-.-		y	-.--	
+l	.-..		z	--..
+m	--		27
+
+Pomùcka:
+
+type Tvektor = array [1..3] of word;
+const vektor : Tvektor = (10,20,30); {inicializovaná promìnná | typová konstanta= nevhodné pojmenování}
+ 
+Výše uvedenou  deklarací (definicí) hodnoty jednotlivých prvkù jsou: 
+vektor[1] = 10 
+vektor[2] = 20 
+vektor[3] = 30 
+
+
+
+
+
+ 			
+

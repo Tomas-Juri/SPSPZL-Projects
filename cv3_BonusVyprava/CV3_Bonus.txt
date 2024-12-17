@@ -1,0 +1,36 @@
+Zadani CV3_Bonus - vysokohorská výprava
+
+Vysokohorští šerpové:
+- na cestì na vrchol nese na zaèátku každý šerpa 40-50 kg zátìže
+- cestou obvykle odpadne 30-40% šerpù
+- šerpa, který odpadne, pøerozdìlí zátìž ostatním
+- šerpa maximálnì unese 75 kg 
+- pokud nelze pøerozdìlit zátìž, zavolá se nový šerpa s nulovou poèáteèní zátìží
+  a pøerozdìlí se náklad tak, aby nesli všichni stejnou zátìž
+- nový šerpa vydrží až do konce
+
+---------------------------------------------------------------------
+
+Požadavky na øešení:
+
+- program bude zobrazovat jména a hmotnosti, které nosièi aktuálnì nesou
+- hmotnost bude celé èíslo 
+- bude možné pøidávat a odebírat nosièe
+- bude možné upravovat nesenou hmotnost
+- celková hmotnost nákladu na zaèátku je rovna hmotnosti na konci cesty
+
+- pomocí podprogramù generujte náhodnì:
+   - poèet šerpù (maximálnì 20)
+   - jména šerpù (maximálnì 6 znakù)
+   - poèáteèní zátìž pro každého šerpu (40 - 50 kg)
+   - šerpy, kteøí nedokonèí cestu 
+
+--------------------------------------------------------------
+
+Forma zpracování: program vhodnì rozdìlte do modulù, použijte modul lineárního seznamu
+
+
+
+
+                                                                                    
+

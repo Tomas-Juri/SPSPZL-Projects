@@ -1,0 +1,18 @@
+
+{funkce testuje existenci souboru daneho jmena }
+ 
+function souborJe(cesta:string):boolean;
+  var pomoc : file;
+      kontrola: boolean;
+
+  begin
+     assign(f,jms); 
+     {$I-} reset(pomoc); {$I+} (* vypne/zapne kontrolu IO operaci *)
+     kontrola := (IORESULT = 0) and ( cesta<>'');
+     if kontrola then
+       close(pomoc);
+
+     souborJe := anoNe
+     end; {souborJe }
+
+ {test existence souboru}

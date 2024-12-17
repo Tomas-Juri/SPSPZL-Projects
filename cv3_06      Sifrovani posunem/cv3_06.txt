@@ -1,0 +1,60 @@
+CV3_06
+
+Modul obousmerne vazaneho linearniho seznamu s hlavou pouzijte 
+pro kodovani a dekodovani textoveho souboru. Textovy soubor 
+obsahuje pouze pismena anglicke abecedy A..Z a MEZERU. Tyto
+znaky jsou ulozeny v obousmerne vazanem linearnim seznamu 
+(kodovaci seznam znaku).Kod znaku je dan celym kladnym cislem,
+ktere vyjadruje pocet pismen mezi kodovanym pismenem a naposledy
+kodovanym pismenem v danem smeru (bud vpravo nebo vlevo od
+naposledy kodovaneho pismene).Smery vpravo, vlevo se pravidelne
+stridaji. Pri urcovani kodu prvniho znaku zaciname od pismene A
+v kodovacim seznamu znaku smerem vpravo ke kodovanemu znaku. 
+
+Podminka reseni:
+ Program bude spousten z prikazoveho radku s parametry:
+  jmeno_vstupniho_souboru 
+  jmeno_vystupniho_souboru
+ dalsi parametry volte dle vlastniho uvazeni.
+
+ Poradi parametru neni stanoveno.
+
+-----------------------------------------------------------
+Kodovaci seznam znaku:
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ' '
+----------------------------------------------------------
+
+Priklad kodovani slov: ALENA JE
+
+- Hledame kod pismene A
+  Zaciname na A, smerem vpravo o 0 znaku  
+  kod A je 0
+- Hledame kod pismene L
+  Zaciname na znaku A, smerem vlevo o 16 znaku    
+  kod L je 16
+- Hledame kod pismene E
+  Zaciname na znaku L, smerem vpravo o 20 znaku    
+  kod E je 20
+- Hledame kod pismene N
+  Zaciname na znaku E, smerem vlevo o 18 znaku    
+  kod N je 18
+- Hledame kod pismene A
+  Zaciname na znaku N, smerem vpravo o 14 znaku    
+  kod A je 14
+- Hledame kod znaku MEZERA
+  Zaciname na znaku A, smerem vlevo o 1 znak    
+  kod MEZERY je 1
+- Hledame kod pismene J
+  Zaciname na znaku MEZERA, smerem vpravo o 10 znaku    
+  kod J je 10
+- Hledame kod pismene E
+  Zaciname na znaku J, smerem vlevo o 5 znaku    
+  kod E je 5
+
+Vysledny kod: 0 16 20 18 14 1 10 5 
+
+
+
+
+
+

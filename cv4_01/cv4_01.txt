@@ -1,0 +1,30 @@
+CV4-01
+
+Jsou dány dva soubory celých èísel (napø.: m1.dat, m2.dat). Èísla generujte a ukládejte je do 
+textových souborù po øádcích. Jednotlivá èísla oddìlujte mezerou. Maximální délka øádku je 65 znakù.
+Èísla v souborech považujte za prvky množin. Vytvoøte tøetí soubor (napø.: m.dat), jehož obsahem  bude:
+a) prùnik prvkù ležících v souboru m1.dat a m2.dat (m.dat = m1.dat * m2.dat)
+b) rozdíl prvkù ležících v souboru m1.dat a m2.dat (m.dat = m1.dat - m2.dat).
+
+Výstupní soubor bude opìt textový, jednotlivá èísla v nìm budou oddìlena mezerou, maximální délka øádku
+je 65 znakù.
+
+
+Návod k øešení:
+ - Použijte tøídu vytvoøenou v CV3_07.  
+ - Pokud nevíte jak, poradim
+
+
+Forma zpracovaní: 	
+
+  - program (hlavní modul)
+  - programu budou z pøíkazového øádku pøedány 3 parametry:
+    požadovaná operace, 
+    dva vstupní soubory èísel,
+    soubor výstupní
+
+
+
+
+
+
